@@ -1,0 +1,7 @@
+<button class="btn" [ngClass]="{reveald: isRevealedDetails}" (click)="changeRevealDetails()">{{buttonName}}</button>
+<p class="details" *ngIf="isRevealedDetails">This is some important details</p>
+<hr>
+<h1>Logs</h1>
+<div>
+  <p [ngClass]="{whiteColor: i > 3}" [ngStyle]="{backgroundColor: i > 3 ? 'red' : 'transparent'}" *ngFor="let log of logs; let i = index">{{log}}</p>
+</div>
