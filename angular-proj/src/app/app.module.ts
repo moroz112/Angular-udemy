@@ -18,6 +18,7 @@ import { Assigment4Component } from './assigments/assigment4/assigment4.componen
 import { GameControlComponent } from './assigments/assigment4/game-control/game-control.component';
 import { OddComponent } from './assigments/assigment4/odd/odd.component';
 import { EvenComponent } from './assigments/assigment4/even/even.component';
+import { BasicDirectiveDirective } from './assigments/angular-directives/basic-directive.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EvenComponent } from './assigments/assigment4/even/even.component';
     Assigment4Component,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    BasicDirectiveDirective
   ],
   imports: [
     BrowserModule,
