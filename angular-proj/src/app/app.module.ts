@@ -1,6 +1,6 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +19,9 @@ import { GameControlComponent } from './assigments/assigment4/game-control/game-
 import { OddComponent } from './assigments/assigment4/odd/odd.component';
 import { EvenComponent } from './assigments/assigment4/even/even.component';
 import { BasicDirectiveDirective } from './assigments/angular-directives/basic-directive.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { RecipeService } from './recipes/recipe.service';
+import { ShoppingListService } from './/shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -37,13 +40,17 @@ import { BasicDirectiveDirective } from './assigments/angular-directives/basic-d
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    BasicDirectiveDirective
+    BasicDirectiveDirective,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    RecipeService,
+    ShoppingListService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
